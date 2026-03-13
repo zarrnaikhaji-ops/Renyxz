@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Renz AI Code</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Code</h1>
+<p class="desc">AI coding assistant</p>
+
+<div id="chat"></div>
+
+<div class="inputBox">
+
+<input id="prompt" placeholder="Message AI Code...">
+
+<button onclick="send()">➤</button>
+
+</div>
+
+<div class="tools">
+
+<button onclick="setMode('frontend')" id="frontend">Frontend</button>
+<button onclick="setMode('backend')" id="backend">Backend</button>
+<button onclick="setMode('fullstack')" id="fullstack">Fullstack</button>
+<button onclick="setMode('debug')" id="debug">Debug</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

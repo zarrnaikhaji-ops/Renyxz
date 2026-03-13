@@ -1,0 +1,8 @@
+{
+ "routes":[
+  {
+   "src":"/ai",
+   "dest":"/ai.js"
+  }
+ ]
+}
