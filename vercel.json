@@ -1,5 +1,11 @@
 {
   "version": 2,
+  "functions": {
+    "chat.js": {
+      "maxDuration": 10,
+      "runtime": "nodejs18.x"
+    }
+  },
   "builds": [
     {
       "src": "*.html",
@@ -17,7 +23,7 @@
   "routes": [
     {
       "src": "/api/chat",
-      "dest": "chat.js"
+      "dest": "/chat.js"
     },
     {
       "src": "/(.*)",
