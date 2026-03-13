@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vexel Code AI • Asisten Coding Gaul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <h1>Vexel<span>Code</span></h1>
+            </div>
+            
+            <button class="new-chat-btn" onclick="newChat()">
+                <i class="fas fa-plus"></i>
+                <span>New Chat</span>
+            </button>
+
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history akan diisi JavaScript -->
+                <div class="history-item active">
+                    <i class="fas fa-message"></i>
+                    <div class="history-info">
+                        <div class="history-title">Chat 1</div>
+                        <div class="history-date">Baru saja</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <div class="user-details">
+                    <span class="user-name">Renzx Code</span>
+                    <span class="user-plan">Pro Member</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Chat Header -->
+            <header class="chat-header">
+                <div class="header-info">
+                    <h2>Vexel Code AI</h2>
+                    <p>Asisten coding dengan gaya ngobrol santai</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn" onclick="clearChat()">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Chat Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <div class="message welcome">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-sender">Vexel AI</div>
+                        <div class="message-text">
+                            Kenalin Gw Vexel Ai Dibuat Oleh Renzxy, Gw Di Ciptakan Untuk Membantu Lu Pada Ngoding Ye Jadi Tanyain Soal Coding Aja Jnagan Yang Lain
+                        </div>
+                        <div class="message-time">Baru saja</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-area">
+                <textarea 
+                    id="messageInput" 
+                    class="message-input" 
+                    placeholder="Tanya apa pun tentang coding..."
+                    rows="1"
+                    oninput="autoResize(this)"
+                ></textarea>
+                <button class="send-btn" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
